@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="rootVBox" spacing="20" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.controller.LoginController"
+      prefWidth="1024" prefHeight="768"
+      style="-fx-background-color: #66CDAA;">
+
+    <children>
+        <Label text="Inicio de Sesión" style="-fx-font-size: 30px; -fx-font-weight: bold;"/>
+
+        <Label text="Usuario:"/>
+        <TextField fx:id="nombreField" promptText="Ingrese su nombre"
+                   prefWidth="300" maxWidth="300"/>
+
+        <Label text="Contraseña:"/>
+        <PasswordField fx:id="passwordField" promptText="Ingrese su contraseña"
+                       prefWidth="300" maxWidth="300"/>
+
+        <Button text="Iniciar Sesión" onAction="#loginUsuario"
+                prefWidth="200" prefHeight="50"
+                style="-fx-background-color: #B0B0B0; -fx-font-size: 16px; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 2px;"/>
+
+        <Button text="Volver" onAction="#volver"
+                prefWidth="200" prefHeight="50"
+                style="-fx-background-color: #B0B0B0; -fx-font-size: 16px; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 2px;"/>
+    </children>
+</VBox>
